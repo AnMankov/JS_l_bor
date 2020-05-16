@@ -1,3 +1,6 @@
-var name = "John"; //имя
+var ctr = 0;
 
-console.log("Hello, " + name);
+while( ctr < 10 )
+{
+  console.log( ctr++ );
+}
