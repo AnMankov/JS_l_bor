@@ -1,6 +1,12 @@
-var ctr = 0;
+var base =  2; 
+var exp  = 10;
+var ctr  =  0;
+var res  =  1;
 
-while( ctr < 10 )
+while ( ctr++ < exp )
 {
-  console.log( ctr++ );
+  res *= base; 
 }
+
+console.log( res );
+
