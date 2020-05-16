@@ -1,12 +1,20 @@
-var base =  2; 
-var exp  = 10;
-var ctr  =  0;
-var res  =  1;
+/*
+Draw the right triangle:
+*
+**
+***
+****
+*****
+*/
 
-while ( ctr++ < exp )
+var sym     = "*";
+var cur_row =   1;
+var ROW_QTY =   5;
+var res     =  "";
+
+while ( cur_row++ <= ROW_QTY )
 {
-  res *= base; 
+  res += sym;
+  console.log( res );
 }
-
-console.log( res );
 
