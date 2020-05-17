@@ -1,16 +1,11 @@
-var base =  2; 
-var exp  = 10;
-var res  =  1;
-
-function power( base, exp )
+function cmp( base )
 {
-  for ( var ctr = 0; ctr < exp ; ++ctr )
+  return function( nbr )
   {
-    res *= base;
-  } 
-
-  return res;
+    return ( nbr == base ) ? null : base > nbr; 
+  }
 }
 
-console.log( power( base, exp ) );
-
+console.log( cmp( 10 )( 9 ) );
+console.log( cmp( 10 )( 10 ) );
+console.log( cmp( 10 )( 11 ) );
