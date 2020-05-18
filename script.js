@@ -3,15 +3,9 @@ var b = [];
 
 a[ 99 ] = 7;
 
-for ( var ctr_src = 0, ctr_dest = 0; ctr_src < a.length; ++ctr_src, ++ctr_dest )
+for ( var ctr_src in a )
 {
-  if ( a[ ctr_src ] !== undefined )
-  {
-    b[ ctr_dest ] = Math.pow( a[ ctr_src ], 2 );
-    console.log( "b[ " + ctr_dest + " ] = ", b[ ctr_dest ] );
-  }
-  else
-  {
-    b[ ctr_dest ] = undefined;
-  }
+  b.push( Math.pow( a[ ctr_src ], 2 ) );
+  
+  console.log( "b[ " + ctr_src +  " ] = ", b[ ctr_src ] );
 }
